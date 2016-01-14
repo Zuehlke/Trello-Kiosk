@@ -12,7 +12,7 @@ sudo raspi-config
 Select the option to increase your space on the SD-Card. I would recommend to overclock the Pi to medium level (900Mhz).
 
 ## Remove unnecessary software.
-If your SD-Card is only 4GB you could perform following steps in order to free up around 1GB.
+If your SD-Card is only 4GB you can perform following steps in order to free up around 1GB.
 
 **Wolfram will free 460MB.**
 ```
@@ -50,13 +50,13 @@ sudo apt-get autoremove
 ```
 
 ## Update your RaspberryPi Raspian OS
-With this command you will update your software of your OS.
+This command will update your software of your OS.
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
 # Install the Epiphany web browser
-With the following command you will install the Epiphany web browser and tools for the kiosk mode and automation of key inputs.
+The following command you will install the Epiphany web browser and tools for the kiosk mode and automation of key inputs.
 ```
 sudo apt-get install epiphany-browser x11-xserver-utils xautomation unclutter -y
 ```
