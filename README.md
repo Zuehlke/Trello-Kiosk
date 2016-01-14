@@ -82,12 +82,14 @@ This is your password for your user on Trello.
 @xset s off
 @xset -dpms
 @xset s noblank
-@/home/pi/trello-kiosk/trello-kiosk.sh [TRELLO_BOARD_RELATIVE_PATH] [USER] [PASSWORD] > /dev/null 2>&1
+@/home/pi/Trello-Kiosk/trello-kiosk.sh [TRELLO_BOARD_RELATIVE_PATH] [USER] [PASSWORD] > /dev/null 2>&1
 ```
 
 # Checkout GitHub repository
-TODO...
-Move the file trello-kiosk.sh to /home/pi/trello-kiosk
+Clone the repository to the home folder of your *pi* user **/home/pi**.
+> git clone https://github.com/Zuehlke/Trello-Kiosk.git
 
-# Change permissions.
-sudo chmod 755 /home/pi/trello-kiosk.sh
+**Change the permissions.**
+> sudo chmod 755 /home/pi/Trello-Kiosk/trello-kiosk.sh
+
+Reboot your RaspberryPi. It should show your Trello dashboard when it started after around one minute.
