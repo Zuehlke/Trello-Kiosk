@@ -12,7 +12,7 @@ sudo raspi-config
 Select the option to increase your space on the SD-Card. I would recommend to overclock the Pi to medium level (900Mhz).
 
 ## Remove unnecessary software.
-If your SD-Card is only 4GB you could perform following steps in order to free up some space.
+If your SD-Card is only 4GB you could perform following steps in order to free up around 1GB.
 
 **Wolfram will free 460MB.**
 ```
@@ -67,17 +67,27 @@ Edit the autostart file
 sudo vi ~/.config/lxsession/LXDE-pi/autostart
 ```
 
-Add these lines to the autostart file.
+Add these lines to the autostart file. For the last line, replace your relative path to your Trello dashboard and the user as well as its password.
+
+This is the relative path after the trello domain to your dashboard.
+> [TRELLO_BOARD_RELATIVE_PATH]=/b/xXXxxXXx/dashboard-name
+
+This is your username for Trello.
+> [USER]=foo.bar[at]email.com
+
+This is your password for your user on Trello.
+> [PASSWORD]=********
+
 ```
 @xset s off
 @xset -dpms
 @xset s noblank
-@/home/pi/trello-kiosk/trello-kiosk.sh > /dev/null 2>&1
+@/home/pi/trello-kiosk/trello-kiosk.sh [TRELLO_BOARD_RELATIVE_PATH] [USER] [PASSWORD] > /dev/null 2>&1
 ```
 
 # Checkout GitHub repository
 TODO...
- Move the file trello-kiosk.sh to /home/pi/trello-kiosk
+Move the file trello-kiosk.sh to /home/pi/trello-kiosk
 
 # Change permissions.
 sudo chmod 755 /home/pi/trello-kiosk.sh
