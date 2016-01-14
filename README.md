@@ -1,4 +1,4 @@
-# FreiTalks-Dashboard
+# Trello-Kiosk
 
 This script enables you to display automatically a Trello dashboard with a RaspberryPi after startup. Currently, it supports Raspbian Jessie.
 
