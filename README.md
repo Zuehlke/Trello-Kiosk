@@ -72,12 +72,12 @@ Add these lines to the autostart file.
 @xset s off
 @xset -dpms
 @xset s noblank
-@/home/pi/freitalks/freitalks.sh > /dev/null 2>&1
+@/home/pi/trello-kiosk/trello-kiosk.sh > /dev/null 2>&1
 ```
 
 # Checkout GitHub repository
 TODO...
- Move the file trello-dashboard to /home/pi/trello-dashboard.sh
+ Move the file trello-kiosk.sh to /home/pi/trello-kiosk
 
 # Change permissions.
-sudo chmod 755 /home/pi/freitalks.sh
+sudo chmod 755 /home/pi/trello-kiosk.sh
