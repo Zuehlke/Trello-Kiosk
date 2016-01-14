@@ -1,6 +1,6 @@
 # Trello-Kiosk
 
-This script enables you to display automatically a Trello dashboard with a RaspberryPi after startup. Currently, it supports Raspbian Jessie.
+This script enables you to display a Trello dashboard with a RaspberryPi after startup. Currently, it supports Raspbian Jessie.
 
 ## Pre-requisites
 At first, you can improve the performance of the RaspberryPi by overclocking its core and expanding the space on the SD-Card. Open the configuration of the RaspberryPi by executing the following command.
