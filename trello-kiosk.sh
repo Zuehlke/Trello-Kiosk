@@ -23,8 +23,8 @@ sleep $BROWSER_START_TIME;
 xte "key F11" -x:0
 sleep $SLEEP_TYPE_TIME;
 
-# Press twice CTRL + - in order to decrease the zoom.
-xte "keydown Control_L" "str -" "str -" "keyup Control_L" -x:0
+# Press CTRL + - in order to decrease the zoom.
+xte "keydown Control_L" "str -" "keyup Control_L" -x:0
 sleep $SLEEP_TYPE_TIME;
 
 # Type in your Trello username.
