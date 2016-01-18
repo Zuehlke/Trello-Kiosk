@@ -1,7 +1,7 @@
-# Trello login url with redirect to Trello dashboard.
+# Trello login url with redirection to Trello dashboard.
 TRELLO_URL=https://trello.com/login?returnUrl=$1
 
-# The amount of time to sleep after the browser opened. If your internet connection is slow, increase this time. Otherwise, you might decrease it.
+# The amount of time to sleep after the browser opened. If your internet connection is slow, increase this time. Otherwise, you could decrease it.
 BROWSER_START_TIME=45s
 
 # Sleep time between typing.
@@ -42,5 +42,5 @@ sleep $SLEEP_TYPE_TIME;
 # Press return in order to load the Trello dashboard.
 xte "key Return" -x:0
 
-# Hide the mouse cursor after some seconds when it hasn't moved for a while.
+# Hide the mouse cursor after some seconds if it hasn't moved for a while.
 unclutter &
