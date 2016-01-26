@@ -1,7 +1,7 @@
 # Trello login url with redirection to Trello dashboard.
 TRELLO_URL=https://trello.com/login?returnUrl=$1
 
-# The amount of time to sleep after the browser opened. If your internet connection is slow, increase this time. Otherwise, you could decrease it.
+# The amount of time to sleep after the browser opened. If your internet connection is slow, increase this number. Otherwise, you could decrease it for faster startup.
 BROWSER_START_TIME=45s
 
 # Sleep time between typing.
